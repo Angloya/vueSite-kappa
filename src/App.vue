@@ -14,7 +14,7 @@
       <router-link to="/work"> Work </router-link>
       <router-link to="/blog"> Blog </router-link>
       <router-link to="/services"> Services </router-link>
-      <router-link to="/Contact"> Contact </router-link>
+      <router-link to="/contacts"> Contact </router-link>
     </nav>
     <div id="widget-filter">
                 <h3>
@@ -50,7 +50,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900');
 #app {
-    width: 100%;
+    width: 110%;
     font-family: 'Roboto', sans-serif;
     background: #e8e8e8;
     display: flex;

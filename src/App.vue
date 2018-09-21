@@ -16,19 +16,6 @@
       <router-link to="/services"> Services </router-link>
       <router-link to="/contacts"> Contact </router-link>
     </nav>
-    <div id="widget-filter">
-                <h3>
-                    Filter <img src="./assets/filter.png" alt="">
-                </h3>
-                <ul id="filter">
-                    <li> <a href="#">All Works</a></li>
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">illustration</a></li>
-                    <li><a href="#">photography</a></li>
-                    <li><a href="#">wallpapers</a></li>
-                    <li><a href="#">brochures</a></li>
-                </ul>
-            </div>
             <div id="widget-bottom">
                 <a href="#"><img src="./assets/webicon-behance.png" alt=""></a>
                 <a href="#"><img src="./assets/webicon-dribbble.png" alt=""></a>

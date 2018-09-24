@@ -9,7 +9,7 @@
         </div>
         <div class="text">
         <h2 @click="blogRouter(blog.id)">{{blog.title | to-uppercase}}</h2>
-        <article @click="blogRouter(blog.id)">{{blog.content}}</article>
+        <article @click="blogRouter(blog.id)">{{blog.content | snippet}}</article>
           <div class="category">
             <ul v-for="(category, index) in blog.categories" :key="index">
               <li @click="categoryRouter(category)">{{category}}</li>
@@ -49,8 +49,11 @@ export default {
           blogsArray.push(data[key])
         }
         this.blogs = blogsArray
+        this.loading = false
       })
-      this.loading = false
+    },
+    blogRouter (id) {
+      this.$router.push('blog/' + id)
     }
   }
 }
@@ -72,8 +75,8 @@ export default {
     padding: 20px
 }
 .add-blog {
-    max-width: 20%;
-    max-height: 400px;
+    max-width: 30%;
+    max-height: 600px;
     overflow: scroll;
     padding: 20px;
     border: 1px solid black;
@@ -83,6 +86,7 @@ export default {
     font-size: 13px;
     font-weight: 300;
     line-height: 22px;
+    background: #ffffff
 }
 .single-blog {
     max-width: 30%;
@@ -120,5 +124,22 @@ export default {
 .single-blog img {
     max-width: 110%;
     max-height: 100%
+}
+.add-blog::-webkit-scrollbar {
+    width: 4px;
+    background: #000000;
+}
+.add-blog::-webkit-scrollbar-thumb:vertical {
+    width: 4px;
+    background: #928e8e;
+}
+.add-blog::-webkit-scrollbar-thumb:horizontal  {
+   display: none;
+    background: #928e8e;
+}
+.add-blog::-webkit-scrollbar:horizontal {
+    width: 0px;
+    display: none;
+    background: #000000;
 }
 </style>

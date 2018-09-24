@@ -65,7 +65,7 @@ export default {
       blog: {
         title: '',
         content: '',
-        categories: ['no category'],
+        categories: [],
         image: '',
         author: ''
       },
@@ -114,31 +114,29 @@ export default {
 .add-blog button {
   padding: 10px;
   outline: none;
-  font-size: 20px;
-  border-radius: 8px;
-  background-color: rgba(255, 198, 190, 0.4);
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
   margin-right: 10px;
 }
 .add-blog button:hover {
   transition: .5s linear;
-  background-color: rgba(255, 250, 249, 0.8)
+  background-color: rgba(194, 191, 190, 0.8)
 }
 label {
   display: block;
   margin: 20px 0 10px;
-  font-size: 25px;
+  font-size: 16px;
 }
 textarea {
-  min-height: 200px;;
+  min-height: 150px;;
 }
 input[type="text"], textarea {
   display: block;
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  font-size: 18px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-color: rgba(255, 198, 190, 0.4)
+  font-size: 16px;
+  background-color: rgba(199, 197, 197, 0.4)
 }
 textarea::-webkit-scrollbar {
   width: 3px;
@@ -163,7 +161,6 @@ textarea::-webkit-scrollbar:horizontal {
 }
 #checkboxes label{
   display: inline-block;
-  margin-right: -90px;
 }
 
 </style>

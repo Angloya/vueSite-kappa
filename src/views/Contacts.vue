@@ -28,7 +28,7 @@
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e3a18ad649d3a6bbcf628ac89cf19dde92f2169c14275004ea03b70194c29a7&amp;source=constructor" width="1000%" height="100%" frameborder="0"></iframe>
 </section>
 </template>
-<style>
+<style scoped>
 .message {
      background: #ffffff;
      width: 782px;

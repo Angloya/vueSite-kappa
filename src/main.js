@@ -34,3 +34,6 @@ Vue.filter('toUppercase', value => {
     return value
   }
 })
+Vue.filter('snippet', value => {
+  return value.slice(0, 300) + '...'
+})

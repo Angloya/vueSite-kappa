@@ -13,7 +13,6 @@
       <router-link to="/about"> About </router-link>
       <router-link to="/work"> Work </router-link>
       <router-link to="/blog"> Blog </router-link>
-      <router-link to="/services"> Services </router-link>
       <router-link to="/contacts"> Contact </router-link>
     </nav>
             <div id="widget-bottom">
@@ -151,30 +150,8 @@ a.router-link-exact-active {
     line-height: 32px;
     padding-right: 25px;
 }
-
-#widget-filter h3 {
-    color: #1ab5b3;
-    font-weight: 400;
-    line-height: 32px;
-    font-size: 19px;
-    padding-right: 25px;
-    padding-top: 20px;
-}
-#widget-filter li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 24px;
-    padding-right: 25px;
-    opacity: 0.2;
-}
-
-#widget-filter a li:hover {
-    opacity: 1;
-}
-
 #widget-bottom {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding-right: 25px;

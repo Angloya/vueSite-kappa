@@ -45,22 +45,41 @@ export default {
 }
 </script>
 <style scoped>
+.home {
+  overflow: scroll;
+   width: 75%
+}
+.home::-webkit-scrollbar {
+    width: 4px;
+    background: #000000;
+}
+.home::-webkit-scrollbar-thumb:vertical {
+    width: 4px;
+    background: #ffffff;
+}
+.home::-webkit-scrollbar-thumb:horizontal  {
+   display: none;
+    background: #ffffff;
+}
+.home::-webkit-scrollbar:horizontal {
+    width: 0px;
+    display: none;
+    background: #000000;
+}
 .photo {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -380px;
+  max-width: 102%;
 }
  img {
-  min-height: 300px;
-  min-width: 300px;
-  height:300px;
-  width: 410px;
+  max-height: 310px;
+  max-width: 250px;
   margin: -2px;
 }
 img:hover{
- -webkit-transform: scale(1.3);
- -moz-transform: scale(1.3);
- -o-transform: scale(1.3);
+ -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -o-transform: scale(1.2);
  border-radius: 10px;
 }
 #home{

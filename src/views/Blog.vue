@@ -48,7 +48,7 @@ export default {
           data[key].id = key
           blogsArray.push(data[key])
         }
-        this.blogs = blogsArray
+        this.blogs = blogsArray.reverse()
         this.loading = false
       })
     },
